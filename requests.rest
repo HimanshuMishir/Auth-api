@@ -1,0 +1,30 @@
+POST http://localhost:3000/api/login 
+Content-Type: application/json
+
+{
+    "userName":"Sabir",
+    "password": "pass"
+}
+###
+PATCH http://localhost:3000/api/change-password
+Authorization: Bearer eyJ hbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2FiaXIiLCJpYXQiOjE2Mjk4Mzc1ODJ9.-M16_4av3JrMLyH1az3lTZHzCNBJh6HiZ_pqJuT81yQ
+Content-Type: application/json
+
+{
+    "password":"passs"
+}
+
+###
+GET http://localhost:3000/api/userprofile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2FiaXIiLCJpYXQiOjE2Mjk4MzQyODF9.DUNsdHD4VrhRSrykj3lDivBuw6hHWif-ABBJqlvnRT8
+
+###
+
+POST http://localhost:3000/api/signup
+Content-Type: application/json
+
+{
+    "userName":"Himanshu",
+    "password":"pass",
+    "Browser":"Chrome"
+}
